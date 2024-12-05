@@ -1,0 +1,68 @@
+  
+
+
+
+
+
+
+
+Rules:
+username = only small leters, numbers and unserscore {_}
+userid   = 0:root, ( 1 - 999 = system), mainuser = 1001, ∴ -u should be biger then 1001
+
+=====================================================================================================
+ create new user :
+=====================================================================================================
+// cmd: to add new user
+  adduser <username> 󰿄 
+
+//params:
+    1. -u     =  (UID) set user id 
+    2. -home  = set user directory 
+    3. -shell = set default shell
+    4. -c     = mention comments
+
+@ eg. 
+   adduser -u 1050 -home /home/testDirectory -shell /bin/zsh -c "this is only a test user." <username>
+_____________________________________________________________________________________________________
+
+
+
+
+
+
+
+=====================================================================================================
+/etc/passwd   --- is the file where everyting is stored {just type it here file will be previewed}
+cat it! becaouse the file preview is not showing everyting. (may be deu to permission issues)
+
+
+cat /etc/passwd 
+eg .
+mukuldk:x:1000:1000:,,,:/home/mukuldk:/usr/bin/zsh
+here:
+1:2:3:4:5:6:7:
+
+1 = usernames
+2 = passward in harsh format in /etc/shadow
+3 = user id 
+4 = primary gorup id for users
+5 = comments for user
+6 = home directory 
+7 = shell 
+
+=====================================================================================================
+
+cat /etc/shadow 
+
+eg.
+mukuldk:$y$j9T$7XXjzYZqkXYiP6Oddo.px1$jQQQczRwyaAdyA4mn4w2sQXMkYDA4eQVJath0SPZZm5:19998:0:99999:7:::
+mysql:!:19999::::::
+sshd:!:20002::::::
+mongodb:!:20004::::::
+mdk:$y$j9T$ta.6Ge8AkbiMCFtdthugx0$xGbJG0nvvVdwoy.UE2XSXGvVIwjJLEMLZkdQZ6.T2G7:20062:0:99999:7:::
+
+1 = username 
+2 = harsh increpted  pass ward 
+
+
