@@ -12,15 +12,19 @@ CPU ===> Binary/Asembly ------------> primary -------> secondary Language ------
 <!--                                                                                                                      -->
 <!--                        POST => (power on self test.)                                                                 -->
 <!--                         ||                                                                                           -->
-<!--                         ||                                                                                           -->
-<!--                        BIOS/UEFI (basic input output system)                                                         -->
+<!--                         \\                                                                                           -->
+<!--                  (ROM) BIOS/UEFI (basic input output system)                                                         -->
 <!--                         ||                                                                                           -->
 <!--                         \\                                                                                           -->
-<!--                                                                                                                      -->
-<!--                                                                                                                      -->
-<!--                                                                                                                      -->
-<!--                                                                                                                      -->
-<!--                                                                                                                      -->
+<!--                        SEMOS (clock+bios copy+changable settings + battery)                                          -->
+<!--                         ||                                                                                           -->
+<!--                         \\                                                                                           -->
+<!--            |---------- MBR (master boot recovery) -chicken add Problem                                               -->
+<!--            \                                                                                                         -->
+<!--            |-----==> INIT-Ram-FS (grub location.)                                                                    -->
+<!--                         ||                                                                                           -->
+<!--                         \\                                                                                           -->
+<!--    (Li-Lo)   ---- > GRUB (grand unix boot loader )                                                                   -->
 <!--                                                                                                                      -->
 <!--                                                                                                                      -->
 <!--                                                                                                                      -->
