@@ -23,8 +23,10 @@ CPU ===> Binary/Asembly ------------> primary -------> secondary Language ------
 <!--            \                                                                                                         -->
 <!--            |-----==> INIT-Ram-FS (grub location.)                                                                    -->
 <!--                         ||                                                                                           -->
-<!--R:                         \\                                                                                         -->
+<!--R:                       \\                                                                                           -->
 <!--    (Li-Lo)   ---- > GRUB (grand unix boot loader )                                                                   -->
+<!--                         ||                                                                                           -->
+<!--                         \\                                                                                           -->
 <!--                                                                                                                      -->
 <!--                                                                                                                      -->
 <!--                                                                                                                      -->
